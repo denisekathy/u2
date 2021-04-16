@@ -8,6 +8,7 @@ const todosCtrl = require('../controllers/todos');
 router.get('/', todosCtrl.index);
 router.get('/', todosCtrl.new);
 router.post("/", todosCtrl.create);
+router.delete("/index/:id", todosCtrl.delete);
 
 
 
